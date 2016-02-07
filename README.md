@@ -1,2 +1,5 @@
 # Cube Summation 
-Implementation of Hacker's Rank Cube Summation exercise using Laravel Framework 5.2
+## Manuel F. Stroh S.
+
+Implementation of  exercise using Laravel Framework 5.2
+[Hacker's Rank Cube Summation](https://www.hackerrank.com/contests/101jan14/challenges/cube-summation "Hacker's Rank Cube Summation") challenge.
