@@ -12,7 +12,8 @@
 */
 Route::get('/', 'NavController@index');
 Route::get('/', 'NavController@info');
-Route::get('create', 'CubeController@create');
+Route::get('create',  'CubeController@create');
+Route::post('create', 'CubeController@configure');
 /*
 |--------------------------------------------------------------------------
 | Application Routes
