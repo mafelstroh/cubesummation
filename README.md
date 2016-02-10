@@ -5,6 +5,29 @@
 ## Implementation of  exercise using Laravel Framework 5.2
 [Hacker's Rank Cube Summation](https://www.hackerrank.com/contests/101jan14/challenges/cube-summation "Hacker's Rank Cube Summation") challenge.
 
+## Application layers:
+
+1. View / Client Side
+
+* Twitter Bootstrap
+* jQuery
+* Laravel's Blade Template Engine
+
+2. Business Logic
+
+* cubesummation\Http\Controllers\NavController.php  -> Responsible for handling navigation
+* cubesummation\Http\Controllers\CubeController.php -> Responsible for the operation related to the Matrix (Update/Query)
+
+3. Service Providers
+
+* Illuminate\Html\HtmlServiceProvider.php -> Used for HTML form building (using a facade provided called FormFacade.php)
+* phpunit\phpunit                         -> Used for unit testing
+
+4. Tools
+
+* Laravel's Elixir (Gulp) -> Responsible for compiling and mixing assets: SASS, JS
+
+
 # Step 2
 ## Code Refactoring
 1. Bad practices evidenced in the provided code: 
