@@ -10,7 +10,9 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-Route::get('/', 'NavController@showMainView');
+Route::get('/', 'NavController@index');
+Route::get('/', 'NavController@info');
+Route::get('create', 'CubeController@create');
 /*
 |--------------------------------------------------------------------------
 | Application Routes

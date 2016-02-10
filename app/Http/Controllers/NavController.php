@@ -13,8 +13,13 @@ class NavController extends Controller
      * Returns the main layout which acts as a placeholder for the application components
      * @return View layouts.main
      */
-    public function showMainView()
+    public function index()
     {
         return view('layouts.main');
+    }
+
+    public function info()
+    {
+        return view('cube.info');
     }
 }
