@@ -1,9 +1,29 @@
 # Cube Summation 
 ## Manuel F. Stroh S.
 
-Implementation of  exercise using Laravel Framework 5.2
+# Step 1
+## Implementation of  exercise using Laravel Framework 5.2
 [Hacker's Rank Cube Summation](https://www.hackerrank.com/contests/101jan14/challenges/cube-summation "Hacker's Rank Cube Summation") challenge.
 
+# Step 2
+## Code Refactoring
+1. Bad practices evidenced in the provided code: 
+
+![Ugly code :3](https://sc-cdn.scaleengine.net/i/f2b309c028ad355784ff5ec0b942d8451.png)
+
+* The code is not following a coding standard. In this specific case, for PHP, should be using PSR standard. 
+
+* The code should only have one output endpoint. There are many 'return' declarations among the code which is a bad practice. 
+
+* Many responsibilities delegated to only one functional piece of code. The method "post_confirm" should not be in charge of formatting a response nor updating the persistance. This can be done in separate methods or even different objects. 
+
+* Code is not easy to test. Both Driver and Service, can be injected as dependencies and as parameters in the method itself, instead of the use of Laravel Facades for this specific case. 
+
+* Lack of use of constants, and use of magic strings. This is a bad practice because it is difficult first to understand which are the statuses that are being validated. 
+
+* A Factory Pattern can be implemented in order to, for this case, send the message to the proper platform, in this case, iPhone and Android. If a new device would come out, with a factory pattern would be much simpler to create a class for its specific responsability. 
+
+* Lack of usefull comments.
 
 # Step 3
 ## Single Responsability Principle
