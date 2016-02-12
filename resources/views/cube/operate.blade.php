@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('content')
-    {!! Form::open() !!}
+    {!! Form::open(array('action' => 'MatrixController@operate')) !!}
         
         <div class="form-group">
             {!! Form::label('cmd', 'Command (QUERY/UPDATE)') !!}
