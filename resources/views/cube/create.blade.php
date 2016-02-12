@@ -1,8 +1,7 @@
 @extends('layouts.main')
 
 @section('content')
-    {!! Form::open() !!}
-
+    {!! Form::open(array('action' => 'CubeController@configure', 'files' => true)) !!}
         <div class="form-group">
             {!! Form::label('testcases', 'Test cases:') !!}
             {!! Form::text('testcases', null, ['class' => 'form-control']) !!}
@@ -16,7 +15,7 @@
         <div class="form-group">
             {!! Form::label('msize', ' M:') !!}
             {!! Form::text('msize', null, ['class' => 'form-control']) !!}
-        </div> 
+        </div>
 
         <div class="form-group">
             {!! Form::submit('Create Matrix', ['class' => 'btn btn-primary form-control']) !!}

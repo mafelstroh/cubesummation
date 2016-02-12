@@ -13,7 +13,7 @@
 Route::get('/', 'NavController@index');
 Route::get('/', 'NavController@info');
 Route::get('create',  'CubeController@create');
-Route::post('create', 'CubeController@configure');
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -24,7 +24,10 @@ Route::post('create', 'CubeController@configure');
 | kernel and includes session state, CSRF protection, and more.
 |
 */
-
+/*
 Route::group(['middleware' => ['web']], function () {
-    //
+    Route::post('create', 'CubeController@configure');
 });
+*/
+
+Route::post('create', array('before' => 'csrf', 'uses' => 'CubeController@configure'));

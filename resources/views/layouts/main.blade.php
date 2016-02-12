@@ -3,10 +3,13 @@
 
 <head>
     <title>Manuel F. Stroh S. - Cube Summation Challenge - Gravility Coding Test</title>
-    <link href="./css/app.css" rel="stylesheet" type="text/css">
+    <link href="./css/app.css" rel="stylesheet" type="text/css"><!-- From CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 </head>
 <body>
 
+    @include('vendor.toast.messages-jquery')
+   
    <div class="container">
       <div class="header clearfix">
         <nav>
@@ -25,15 +28,5 @@
       </footer>
 
     </div>
-
-<!-- <div class="main-console" id="main">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            @yield('content')
-        </div>
-    </div>
-</div> -->
-<!-- From CDN -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 </body>
 </html>
